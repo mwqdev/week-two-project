@@ -1,0 +1,368 @@
+    /* COLORS
+
+    text: #0B1942
+    inline link: #00B7D3
+    h2 background: #0B1942
+    h2 color: #FFFFFF
+    logo background: #F5005B
+    navigation background: #7DDFE8
+    navigation link color: #FFFFFF
+    "Home" nav link background: #00A5BF
+    "Calendar" nav link background: #00B7D3
+    "Join" nav link background: #00D5E7
+    "Up Next" background: #0B1942
+    "Up Next" card background #E2E2E2
+    calendar background and treatments: #0B1942
+    calendar highlighted day: #F5005B
+    button background: #F5005B
+    copyright text: #FFFFFF
+
+    */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: #0B1942;
+  margin: 0;
+}
+
+a {
+  color: #00B7D3;
+}
+
+/***** Nav Bar *****/
+.top-nav {
+  display: flex;
+  width: 100vw;
+  height: 115px;
+  background-color: #7DDFE8;
+}
+
+.logo {
+  background-color: #F5005B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.top-nav-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav-items a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-nav-items li {
+  background-color: #00B7D3;
+  text-align: center;
+  width: 100%;
+  padding: .57rem 0;
+}
+
+.top-nav-items li:first-of-type {
+  background-color: #00A5BF;
+}
+
+.top-nav-items li:last-of-type {
+  background-color: #00D5E7;
+}
+
+/***** SECTION ONE (Get Involved) *****/
+.get-involved {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.get-involved h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: .5rem 0;
+}
+
+.get-involved-card {
+  width: 100%;
+}
+
+.get-involved-card h2 {
+  color: #FFFFFF;
+  background-color: #0B1942;
+  padding: .25rem 1rem;
+  font-weight: lighter;
+  margin: 1rem 0;
+}
+
+.get-involved-card p {
+  line-height: 1.5rem;
+}
+
+/***** SECTION TWO (Up Next) *****/
+.up-next {
+  background-color: #0B1942;
+  padding: 1rem;
+}
+
+.up-next h1 {
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: lighter;
+  margin: 0 0 1rem 2rem;
+}
+
+.up-next-card {
+  background-color: #E2E2E2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.up-next-img {
+  background: url('../images/rashomon-poster.jpg') no-repeat center;
+  background-size: contain;
+  width: calc(50% - 10px);
+}
+
+.up-next-info {
+  width: calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.up-next-info a {
+  font-size: 1.5rem;
+}
+
+.disc-points {
+  font-weight: bold;
+}
+
+.disc-points-ul {
+  list-style: circle;
+  margin: 0;
+  padding: 1rem 0 0 1rem;
+}
+
+.up-next-info li {
+
+}
+
+.film-club {
+  font-size: 1rem;
+}
+
+.rating-divider {
+  margin: 1rem 0;
+  border: 1px solid #0B1942;
+}
+
+.movie-card {
+  display: flex;
+  flex: 0 1 45%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.movie-card-img-1 {
+  background: url('../images/great-train-poster.jpg') no-repeat;
+  height: 400px;
+}
+
+.movie-card-img-2 {
+  background: url('../images/bicycle-thief-poster.jpg') no-repeat;
+  height: 400px;
+}
+
+.movie-card-img-3 {
+  background: url('../images/nosferatu-poster.jpg') no-repeat;
+  height: 400px;
+}
+
+.movie-card-img-4 {
+  background: url('../images/metropolis-poster.jpg') no-repeat;
+  height: 400px;
+}
+
+.movie-card a {
+  font-size: 2rem;
+}
+
+.movie-card span {
+  display: block;
+}
+
+/***** BOTTOM NAV *****/
+footer {
+  display: flex;
+  width: 100vw;
+  background-color: #7DDFE8;
+  flex-wrap: wrap;
+}
+
+.bottom-nav-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-nav-items a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bottom-nav-items li {
+  text-align: center;
+  width: 100%;
+  padding: .57rem 0;
+}
+
+.bottom-nav-items li:first-of-type {
+  background-color: #00A5BF;
+}
+
+.bottom-nav-items li:nth-of-type(2) {
+  background-color: #00B7D3;
+}
+
+.bottom-nav-items li:last-of-type {
+  background-color: #00D5E7;
+}
+
+.copy-text {
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/*********** tablet breakpoint ***********/
+@media (min-width: 545px) and (max-width: 768px) {
+
+/***** TOP NAV *****/
+  .top-nav-items {
+    flex-direction: row;
+  }
+
+  .top-nav-items li {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/***** BOTTOM NAV *****/
+  .bottom-nav-items {
+    flex-direction: row;
+    height: 115px;
+    width: auto;
+  }
+
+  .bottom-nav-items li {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copy-text {
+    width: calc(100% - 300px);
+    padding: 0 1rem 0 0;
+    text-align: right;
+    align-self: center;
+  }
+
+/***** GET-INVOLVED *****/
+  .get-involved {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .get-involved h1 {
+    width: 100%;
+  }
+
+  .get-involved-card {
+    width: calc(33% - 20px);
+  }
+
+}
+
+/*********** desktop breakpoint ***********/
+@media (min-width: 769px) {
+
+/***** TOP NAV *****/
+  .top-nav-items {
+    flex-direction: row;
+  }
+
+  .top-nav-items li {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/***** BOTTOM NAV *****/
+  .bottom-nav-items {
+    flex-direction: row;
+    height: 115px;
+    width: auto;
+    }
+
+  .bottom-nav-items li {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+  .copy-text {
+    width: calc(100% - 300px);
+    padding: 0 1rem 0 0;
+    text-align: right;
+    align-self: center;
+  }
+
+/***** GET-INVOLVED *****/
+  .get-involved {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .get-involved h1 {
+    width: 100%;
+  }
+
+  .get-involved-card {
+    width: calc(33% - 20px);
+  }
+
+}
