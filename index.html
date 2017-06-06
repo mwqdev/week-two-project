@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Film Club</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
@@ -10,9 +10,9 @@
   <body>
 
     <nav class="top-nav">
-      <div class="logo"><img src="./images/filmclub.png" alt="Film Club Logo"></div>
+      <div class="logo"><a href="./index.html"><img src="./images/filmclub.png" alt="Film Club Logo"></a></div>
       <ul class="top-nav-items">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./calendar/index.html">Calendar</a></li>
         <li><a href="./join/index.html">Join</a></li>
       </ul>
@@ -36,44 +36,46 @@
 
     <section class="up-next">
       <h1>Up Next</h1>
-      <div class="up-next-card">
-        <div class="up-next-img"></div>
-        <div class="up-next-info">
-          <a href="">Rashomon</a>
-          <span class="rating">Film Club: <b>6/13</b></span>
-          <hr class="rating-divider">
-          <span class="disc-points">Discussion Points</span>
-          <ul class="disc-points-ul">
-            <li>perspective</li>
-            <li>balance</li>
-            <li>movement</li>
-            <li>emphasis</li>
-            <li>space</li>
-          </ul>
+      <div class="card-wrapper">
+        <div class="up-next-card">
+          <img src="./images/rashomon-poster.jpg" alt="Rashomon">
+          <div class="up-next-info">
+            <a href="https://www.youtube.com/watch?v=7QTrx3YNz7A&t=8s">Rashomon</a>
+            <span class="film-club">Film Club: <b>6/13</b></span>
+            <hr class="rating-divider">
+            <span class="disc-points">Discussion Points</span>
+            <ul class="disc-points-ul">
+              <li>perspective</li>
+              <li>balance</li>
+              <li>movement</li>
+              <li>emphasis</li>
+              <li>space</li>
+            </ul>
+          </div>
+        </div>
+        <div class="up-next-card-2">
+          <div class="movie-card">
+            <img src="./images/great-train-poster.jpg" alt="Great Train Robbery">
+            <a href="https://www.youtube.com/watch?v=zuto7qWrplc">The Great Train Robbery</a>
+            <span class="film-club">Film Club: <b>6/27</b></span>
+          </div>
+          <div class="movie-card">
+            <img src="./images/bicycle-thief-poster.jpg" alt="Bicycle Thief">
+            <a href="https://www.youtube.com/watch?v=H3jnzXX9mXs">The Bicycle Thief</a>
+            <span class="film-club">Film Club: <b>7/11</b></span>
+          </div>
+          <div class="movie-card">
+            <img src="./images/nosferatu-poster.jpg" alt="Nosferatu">
+            <a href="https://www.youtube.com/watch?v=FC6jFoYm3xs">Nosferatu</a>
+            <span class="film-club">Film Club: <b>7/25</b></span>
+          </div>
+          <div class="movie-card">
+            <img src="./images/metropolis-poster.jpg" alt="Metropolis">
+            <a href="https://www.youtube.com/watch?v=Q0NzALRJifI">Metropolis</a>
+            <span class="film-club">Film Club: <b>8/08</b></span>
+          </div>
         </div>
       </div>
-      <!-- <div class="up-next-card-2">
-        <div class="movie-card">
-          <div class="movie-card-img-1"></div>
-          <span><a href="#">The Great Train Robbery</a></span>
-          <span class="rating">Film Club: <b>6/27</b></span>
-        </div>
-        <div class="movie-card">
-          <div class="movie-card-img-2"></div>
-          <span><a href="#">The Bicycle Thief</a></span>
-          <span class="rating">Film Club: <b>7/11</b></span>
-        </div>
-        <div class="movie-card">
-          <div class="movie-card-img-3"></div>
-          <span><a href="#">Nosferatu</a></span>
-          <span class="rating">Film Club: <b>7/25</b></span>
-        </div>
-        <div class="movie-card">
-          <div class="movie-card-img-4"></div>
-          <span><a href="#">Metropolis</a></span>
-          <span class="rating">Film Club: <b>8/08</b></span>
-        </div>
-      </div> -->
     </section>
 
     <footer>
